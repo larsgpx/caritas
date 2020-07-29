@@ -1,0 +1,300 @@
+.breadcrumb{
+    margin-top:30px;
+    .breadcrump-content{
+        a{
+            color:black;
+            font-family: "Montserrat";
+        }
+    }
+    @media screen and (max-width:600px){
+        margin-top:0px;
+        .breadcrump-content{
+            padding:15px 0px;         
+        }
+    }
+}
+
+.select-options{
+    @media screen and (max-width:600px){
+        height:100px;
+        padding:0px;
+        .group-dropdown{
+            label{
+                padding:0px 20px 0px;
+                font-size:.85rem;
+            }
+            .btn-green{
+                width: 77%;
+                display: block;
+                margin: 0 auto;
+                font-size:12.5px;
+            }
+            .dropdown{
+                padding:5px;
+            }
+        }
+    }
+}
+.group-dropdown{
+    width:230px;
+    height:50px;
+    label{
+        color:black;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        padding:7px 12px 0px;
+    }
+    .btn-green{
+        background-color:$green;
+        color:white;
+    }
+    .search-box{
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: center;
+        border:1px solid black;
+        border-radius:10px;
+        padding:13px 20px 13px 10px;
+        font-size:.8rem;
+        &::placeholder{
+            color:black;
+            font-size:.8rem;
+            font-family: 'Montserrat';
+        }
+        &:focus,&:active{
+            background-color:white;
+        }
+    }    
+    @media screen and (max-width:600px){
+        width:100%;
+    }
+}
+
+.programas-card{
+    border:0;
+    border-radius:15px;
+    img{
+        border-radius:15px;
+    }
+    .card-title{
+        position: absolute;
+        right:20px;
+        bottom:35px;
+    }
+    .card-date{
+        background-color:$green-light;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        border-radius: 0px 14px 0px 10px;
+        padding:3px 10px;
+        font-size:.7rem;
+    }
+}
+
+.highlight-card{
+    border:0;
+    border-radius:15px;
+    img{
+        border-radius:15px;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.title-single-tes{
+    font-size: 1.5rem;
+    color:black;
+    font-family: 'Montserrat';
+    font-weight: 600;
+
+}
+
+.dropdown-large{
+    width:200px;
+    height:50px;
+    text-align: left;
+    border-radius:10px;
+    &:after{
+        position: absolute;
+        right: 5%;
+        top: 45%;
+    }
+}
+
+.brand-gallery{
+    .big-img-gallery{
+        .big-img{
+            border-radius: 15px;
+        }
+    }
+    .thumbnail-galleries{
+        .box-thumbnail{
+            width:150px;
+            height:100px;
+            .thumbnail-img{
+                overflow: hidden;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: .5s all;
+                &.selected{
+                    border:2px solid $green;
+                }
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+        @media screen and (max-width:600px){
+            margin:0;
+        }
+    }
+}
+
+
+.accordion-container{
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .accordion-container > h2{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .set{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $green-light-2;
+    border-radius: 10px;    
+  }
+  .set > a{
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    border-radius: 10px;
+    .chevron-down{
+        stroke:#000;
+        width:20px;
+        transition:all 0.2s linear;
+    }
+    &:hover{
+        cursor: pointer;
+        color:black;
+        .chevron-down{
+            stroke:#000;
+        }
+    }
+  }
+  .set > a i{
+    float: right;
+    margin-top: 2px;
+  }
+  .set > a.active{
+    background-color: $green-light-2;
+    color: #000;
+    border-radius:10px 10px 0px 0px;
+    .chevron-down{
+        stroke:#000;
+        transform: rotate(180deg);
+    }
+  }
+  .content{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display:none;
+    font-family: "Montserrat";
+    border-radius:0px 0px 10px 10px;
+    padding-left:15px;
+  }
+  .content p{
+    padding: 10px 15px;
+    margin: 0;
+    color: #333;
+  }
+
+
+  .donar-links{
+      transition: .3s all;
+      .paypal{
+          border:1px solid black;
+          border-radius: 20px;
+          padding: 4px;
+          @media screen and (max-width:600px){            
+            border-radius:25px;
+        }
+      }
+      .visa{
+        border:1px solid black;
+        border-radius:20px;
+        padding:0px 17px;
+        @media screen and (max-width:600px){
+            padding:9px 17px;
+            border-radius:25px;
+        }
+      }
+      &:hover{
+          transform: scale(1.05);
+      }
+  }
+  .visa-box{
+      h2{
+          padding:60px 40px;
+          font-size:1.2rem;
+          color:black;
+          font-family: "Montserrat-bold";
+          @media screen and (max-width:600px){
+            padding:40px 10px;
+            text-align: center;
+          }
+      }
+      .form-control{
+          border-radius: 0px;
+          height:50px;
+          font-family: "Montserrat";
+          font-size:.85rem;
+          &::placeholder{
+            font-family: "Montserrat";
+            font-size:.8rem;
+          }
+      }
+      .donate-btn{
+        background-color:$green;
+        color:white;
+        font-size:.7rem;
+        font-family: 'Montserrat-light';
+        padding:18px 50px;
+        &.disabled{
+            cursor: no-drop;            
+        }
+    }
+    .error{
+        color:red;
+        text-align: center;
+        font-size: .8rem;
+        font-family: 'Montserrat';
+        padding:10px;
+        display:block;
+        &.hide{
+            display:none;
+        }
+    }
+  }

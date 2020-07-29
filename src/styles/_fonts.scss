@@ -1,0 +1,15 @@
+$font_path: 'fonts/';
+@font-face {
+    font-family: "Montserrat";
+    src: url($font_path+"Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-light";
+    src: url($font_path+'Montserrat-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url($font_path+'Montserrat-Bold.ttf') format("truetype");
+}

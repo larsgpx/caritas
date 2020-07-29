@@ -1,0 +1,24 @@
+.caritas-carousel{
+    .carousel-caption{
+        bottom:20%;
+        h1{
+            font-family: 'Montserrat-bold';
+        }
+        .btn-green{
+            background-color:$green;
+            color:white;
+            font-size:.7rem;
+            font-family: 'Montserrat-light';
+            padding:18px 50px;
+        }
+    }
+    
+}
+
+.carousel-indicators{
+    li{
+        width:10px;
+        height:10px;
+        border-radius:100%;
+    }
+}

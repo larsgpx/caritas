@@ -1,0 +1,57 @@
+// Variables
+// Color overrides
+// Set a custom color
+$beige:#E2D2B8;
+$gray:#67746B;
+$gray-light:#E4E1DA;
+$gray-black: #383333 !default;
+$green:#3C7932;
+$green-light:#34870C;
+$green-light-2:#46B810;
+$black:#000;
+$purple:#630F55;
+$blue-marine:#0D3145;
+// Set primary color to orange
+$primary: $gray !default;
+// Font overrides
+$font-family-sans-serif: "Montserrat-light",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+'Noto Color Emoji' !default;
+$font-family-serif: "Montserrat",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+'Noto Color Emoji' !default;
+$font-family-base: $font-family-serif !default;
+$headings-font-family: $font-family-sans-serif !default;
+// Custom variables
+$navbar-height: 72px;
+.desktop {
+    display: block!important;
+}
+
+.mobile {
+    display: none!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat-bold";
+}

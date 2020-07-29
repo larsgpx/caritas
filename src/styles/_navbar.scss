@@ -1,0 +1,117 @@
+// Base styling for the navbar
+#mainNav {
+    box-shadow: $box-shadow;
+    background-color: white;
+    transition: background-color 0.2s ease;
+    padding-top: 50px!important;
+    padding-bottom: 5px!important;
+    transition: .3s all;    
+    .navbar-brand {
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-bold;
+        color: $gray;
+        .logo {
+            height: 100px;
+            margin-top: -10px;
+            margin-bottom:0px;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+    }
+    .navbar-nav {
+        font-size: 1rem;
+        color: black;
+        .nav-item {
+            .nav-link {
+                transition: all .5s;
+                -webkit-transition: all .5s;
+                color: black;
+                font-family: "Montserrat";
+                font-size: 0.75rem;
+                padding: 0.75rem 0;
+                font-weight:600;
+                &:hover,
+                &:active {
+                    color: $green;
+                }
+                &.active {
+                    color: $green !important;
+                }
+                @media screen and (max-width:600px) {
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        // Base styling for the navbar - screen sizes greater than the large breakpoint
+        box-shadow: none;
+        .navbar-brand {
+            color: fade-out($white, .3);
+            &:hover {
+                color: $white;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {                    
+                    padding: 0 1rem;
+                }
+                &:last-child {
+                    .nav-link {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        // Navbar styling applied when the page is scrolled
+        &.navbar-scrolled {
+            padding-top: 10px!important;
+            box-shadow: $box-shadow;
+            background-color: $white!important;
+            margin-top: -1px;
+            .navbar-brand {
+                .logo {
+                    height: 60px;
+                    margin-top: -7px;
+                }
+                &:hover {
+                    color: $primary;
+                }
+            }
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: black;
+                        font-size: .7rem;
+                        &:hover {
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#top-navbar-socials{    
+    background-color: black;
+    height:35px;
+    position: absolute;
+    top: 0;
+    width:100%;
+    z-index: 10000;
+    display:block;
+    .social-icon{
+        width:35px;
+        height:35px;
+        &:first-child{
+            width: 33px;
+            padding-top: 2px;
+        }
+        img{
+            width:100%;
+        }
+    }
+}

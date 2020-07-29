@@ -1,0 +1,57 @@
+.caritas-carousel-interna{
+    .carousel-caption{
+        bottom:10%;
+        h1{
+            font-family: 'Montserrat';
+            font-weight: 600;
+        }       
+    }
+    .carousel-indicators{
+        li{
+            width:10px;
+            height:10px;
+            border-radius:100%;
+        }
+    }    
+}
+
+.subtitles{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size:1.8rem;
+    color:black;    
+}
+
+#mision-vision{
+    .mv-title{
+        position: absolute;
+        top: -50px;
+        font-weight: 600;
+        font-family: "Montserrat";
+        color:black;
+        &.right{
+            right:0px;
+        }
+    }    
+    @media screen and (max-width:600px){
+        .media{
+            img{
+                border-radius: 20px;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .media-body{
+            order:2;
+            padding:20px;
+        }
+        .mv-title{
+            position:relative;
+            top:5px;
+            padding:17px;
+            &.right{
+                left:0px;
+            }
+        }
+    }
+}

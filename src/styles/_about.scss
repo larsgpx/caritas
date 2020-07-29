@@ -1,0 +1,67 @@
+#about{
+    background-color:$gray;
+    min-height: 400px;
+    padding: 15px 0px 25px;
+    h2{
+        color:$beige;
+        font-family: "PoiretOne";   
+        font-size:3rem;
+        text-transform: uppercase;
+    }
+    .border-about{
+        border:1.5px solid $beige;
+        border-radius:20px;
+        padding: 60px 50px;
+        position: relative;
+        margin-top:50px;
+        margin: 50px 150px;    
+        @media screen and (max-width:600px){
+            margin:50px 10px;
+            padding:50px 20px;
+            
+        }
+        &:before{
+            content:'';
+            display:block;
+            width:90px;
+            height:50px;
+            background-image: url('/src/img/single-circle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 50%;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -25px;
+            background-color: $gray;
+        }
+        p{
+            text-align: center;            
+            font-family: "OpenSans-light";
+            font-size:1.3rem;
+            color:white;
+            line-height: 25px;
+            @media screen and (max-width:600px){
+                text-align: justify;
+            }
+        }
+        a{
+            display:block;
+            background-color:$gray;     
+            border:1px solid $beige;   
+            color: white;
+            font-size: 12px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            box-shadow: 0;
+            margin:10px 0px 0px 45px;  
+            margin:0 auto;                      
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:-23px;
+            width:98px;
+        }
+    }
+}
