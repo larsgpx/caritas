@@ -15,6 +15,11 @@
 }
 
 .select-options{
+    .group-dropdown{
+        label{
+            float:left;
+        }
+    }
     @media screen and (max-width:600px){
         height:100px;
         padding:0px;
@@ -56,17 +61,44 @@
         border-radius:10px;
         padding:13px 20px 13px 10px;
         font-size:.8rem;
+        transition:.3s all;
+        -webkit-transition:.3s all;
         &::placeholder{
             color:black;
             font-size:.8rem;
             font-family: 'Montserrat';
         }
         &:focus,&:active{
-            background-color:white;
+            background-color:white!important;
+            border-radius:10px!important;
+            outline: inherit;
+            transition:.3s all!important;
+            -webkit-transition:.3s all!important;
+            border:1px solid black!important;
+            -webkit-transition:.3s all;
+            padding:13px 20px 13px 20px;
         }
     }    
     @media screen and (max-width:600px){
         width:100%;
+    }
+}
+
+#programas{
+    .group-dropdown{
+        @media screen and (max-width:600px){
+            width:80%;
+            .dropdown{
+                .btn-green{
+                    max-width:150px;
+                    margin-left:15px;
+                }
+            }
+            .search-box{
+                width:90%;
+                margin-left:10px;
+            }
+        }   
     }
 }
 
