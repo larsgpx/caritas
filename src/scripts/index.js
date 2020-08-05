@@ -60,7 +60,7 @@ import '../styles/index.scss';
    
     // Collapse Navbar
     var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 25) {
+        if ($("#mainNav").offset().top > 50) {
             $("#mainNav").addClass("navbar-scrolled");
         } else {
             $("#mainNav").removeClass("navbar-scrolled");
@@ -71,7 +71,7 @@ import '../styles/index.scss';
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    // noticias
+    // noticias destacadas
     
     fetch('https://jsonplaceholder.typicode.com/posts?_limit=3')
     .then(function (response) {
@@ -80,19 +80,86 @@ import '../styles/index.scss';
             let html = '';
             data.forEach(function(post){
                 html += `
-                <div class="card col-sm-4 col-12" style="width: 18rem;">
-                    <img src="https://via.placeholder.com/276x136" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.body}</p>
-                    <a href="/noticia/${post.id}" class="read-more">Leer más  ⮞</a>
+                    <div class="card col-sm-4 col-12" style="width: 18rem;">
+                        <img src="src/img/385x374.png" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">${post.title}</h5>
+                        <p class="card-text">${post.body}</p>
+                        <a href="/noticia/${post.id}" class="read-more">Leer más  ⮞</a>
+                        </div>
                     </div>
-                </div>
-                `;
-                document.getElementById('news-featured').innerHTML = html;
+                    `;
+                // document.getElementById('news-featured').innerHTML = html;
+                $('#news-featured').append(html)
             });        
     });    
-    
+
+//programas (prueba)   
+
+
+fetch('https://jsonplaceholder.typicode.com/posts?_limit=6')
+.then(function (response) {
+    return response.json()
+}).then(function (data) {
+        var html = '';
+        data.forEach(function(post){
+            html += `
+            <a href="programa.html" class="programas-card card p-4 text-white col-12 col-sm-4">
+                <img src="src/img/385x374.png" class="card-img" >
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-right pr-3">${post.title}</h5>
+                  <span class="card-date">${post.id}/07/2020</span>
+                </div>
+            </a>            
+            `;            
+            // document.getElementById('list-programas-content').innerHTML = html;
+            $('#list-programas-content').append(html)
+        });
+});    
+
+
+//asda
+
+// (function() {
+//     let nextPage = 1;
+//     const content = document.querySelector('.contentss');
+//     const loading = document.querySelector('.loadings');
+  
+//     function renderUsers(users) {
+//       users.results.map(user => {
+//         const element = document.createElement('div');
+//         element.classList.add('user');
+//         element.innerHTML = user.email;
+//         content.appendChild(element);
+//       });
+//     }
+  
+//     async function getUsers(page) {
+//       const users = await (
+//         await fetch(`https://randomuser.me/api/?page=${page}&results=50`)
+//       ).json();
+//       return users;
+//     }
+  
+//     async function loadMoreUsers() {
+//       const { scrollTop, clientHeight, scrollHeight } = content;      
+//       if (scrollHeight - scrollTop === clientHeight) {
+//         loading.classList.add('show');
+//         const users = await getUsers(nextPage);
+//         renderUsers(users);
+//         loading.classList.remove('show');
+//         nextPage += 1;
+//       }
+//     }
+  
+//     loadMoreUsers();
+//     nextPage += 1;
+  
+//     // Event listeners
+//     content.addEventListener('scroll', loadMoreUsers);
+//   })();
+
+//asda
 
     //programas
     

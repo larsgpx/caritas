@@ -159,18 +159,30 @@ label{
         width: 100px;
         padding: 10px;
     }
+    .social-icon{
+        img{
+            width:40px;
+        }
+    }
+    p{
+        color:white;
+    }
 }
 
 .carouselFull{
     .carousel-inner{
        .carousel-item{
             min-height:490px;
+            background-position: center center;
+            background-size: cover;
             @media screen and (max-width:600px) {
                 background-position: center center;
                 .carousel-caption{
                     bottom:40%;
                     h1{
                         font-size:1.7rem;
+                        font-family: "Montserrat";
+                        font-weight: 600;
                         text-align:center!important;
                     }
                 }

@@ -17,7 +17,8 @@
             transition: all .3s;
             -webkit-transition: all .3s;
         }
-    }
+        
+    }    
     .navbar-nav {
         font-size: 1rem;
         color: black;
@@ -69,7 +70,7 @@
             padding-top: 10px!important;
             box-shadow: $box-shadow;
             background-color: $white!important;
-            margin-top: -1px;
+            margin-top: -1px;            
             .navbar-brand {
                 .logo {
                     height: 60px;
@@ -90,6 +91,11 @@
                     }
                 }
             }
+        }
+    }
+    @media screen and (max-width:768px){
+        &.navbar-scrolled{
+            margin-top:0px!important;
         }
     }
 }

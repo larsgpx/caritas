@@ -61,7 +61,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename:'como-donar.html',
       template: Path.resolve(__dirname, '../src/como-donar.html')      
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename:'publicaciones.html',
+      template: Path.resolve(__dirname, '../src/publicaciones.html')      
+    }),
+    new HtmlWebpackPlugin({
+      filename:'publicacion.html',
+      template: Path.resolve(__dirname, '../src/publicacion.html')      
+    }),
    
   ],
   resolve: {

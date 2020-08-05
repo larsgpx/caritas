@@ -112,15 +112,21 @@
         position: absolute;
         right:20px;
         bottom:35px;
+        padding:15px;
+        @media screen and (max-width:768px){
+            font-size:.9rem;
+        }
     }
     .card-date{
         background-color:$green-light;
         position: absolute;
-        right: 24px;
-        top: 24px;
+        left: 24px;
+        bottom: 24px;
         border-radius: 0px 14px 0px 10px;
         padding:3px 10px;
         font-size:.7rem;
+        letter-spacing: 2px;
+        font-family: 'Montserrat';
     }
 }
 
@@ -330,3 +336,40 @@
         }
     }
   }
+
+  //animacion carga de nuevos posts
+
+  @keyframes "jump" {
+	0%,100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+.loading {
+	opacity: 0;
+	display: flex;
+	position: fixed;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: opacity .3s ease-in;
+}
+.loading.show {
+	opacity: 1;
+}
+.ball {
+	background-color: #777;
+	border-radius: 50%;
+	margin: 5px;
+	height: 10px;
+	width: 10px;
+	animation: jump .5s ease-in infinite;
+	&:nth-of-type(2) {
+		animation-delay: 0.1s;
+	}
+	&:nth-of-type(3) {
+		animation-delay: 0.2s;
+	}
+}

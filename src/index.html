@@ -31,7 +31,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand " href="#page-top"><img src="src/img/logo.png" class="logo"></a>
+            <a class="navbar-brand " href="/"><img src="src/img/logo.png" class="logo"></a>
 
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,6 +55,9 @@
                     </li>                    
                     <li class="nav-item">
                         <a class="nav-link " href="/noticias.html">Cáritas News</a>
+                    </li>                    
+                    <li class="nav-item">
+                      <a class="nav-link " href="/publicaciones.html">Publicaciones</a>
                     </li>                    
                     <li class="nav-item">
                         <a class="nav-link " href="como-donar.html">¿Cómo donar?</a>
@@ -135,7 +138,27 @@
               <h3 class="text-center">Nuestros aliados</h3>                          
           </div>
           <div class="container-fluid mt-4 mb-5">
-            <img src="https://via.placeholder.com/1366x220.png?text=aqui+iran+los+clientes" class="img-fluid" alt="">
+            <div id="carouselAliados" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselAliados" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselAliados" data-slide-to="1"></li>
+                <li data-target="#carouselAliados" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://via.placeholder.com/400x800.png?text=aqui+iran+los+clientes" class="d-block d-sm-none w-100" alt="...">
+                  <img src="https://via.placeholder.com/1400x213.png?text=aqui+iran+los+clientes" class="d-none d-sm-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://via.placeholder.com/400x800.png?text=aqui+iran+los+clientes" class="d-block d-sm-none w-100" alt="...">
+                  <img src="https://via.placeholder.com/1400x213.png?text=aqui+iran+los+clientes" class="d-none d-sm-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://via.placeholder.com/400x800.png?text=aqui+iran+los+clientes" class="d-block d-sm-none w-100" alt="...">
+                  <img src="https://via.placeholder.com/1400x213.png?text=aqui+iran+los+clientes" class="d-none d-sm-block w-100" alt="...">
+                </div>
+              </div>              
+            </div>
           </div>
         </div>
       </section>
@@ -248,7 +271,7 @@
                 </div>
                 <div class="mx-auto pt-5 pb-4">
                     <h6 class="text-center title-minor">Síguenos en Redes Sociales:</h6>
-                    <ul class="d-flex justify-content-center pt-2">
+                    <ul class="d-flex justify-content-center pt-2 group-social-icons">
                         <a class="social-icon pl-2 pr-2" href="#" target="blank"><img src="src/img/social-icons/FB.png" alt=""></a>            
                         <a class="social-icon pl-2 pr-2" href="#" target="blank"><img src="src/img/social-icons/IG.png" alt=""></a>            
                         <a class="social-icon pl-2 pr-2" href="#" target="blank"><img src="src/img/social-icons/TW.png" alt=""></a>            
@@ -263,10 +286,18 @@
     <footer class="footer-bg w-100">
         <div class="container">
             <div class="row pt-2 pb-2">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-5 d-flex pr-sm-5">
                     <img src="src/img/logo_white.png" class="footer_logo" alt="" srcset="">
+                    <div class="text-left text-footer pt-4">
+                      <p class="text-white">Dirección: Jr. Chancay N°282, Cercado de Lima
+                        Lima, Perú</p>                      
+                      <p class="text-white">Teléfono: (01)2037786</p>
+                        
+                      <p class="text-white">Correo: info@vicariadelacaridad.org.pe</p>
+                    </div>
+
                 </div>
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-sm-7">
                     <ul class="d-flex flex-row-reverse pt-4">
                         <a class="social-icon" href="#" target="blank"><img src="src/img/social-icons/fb-white.png" alt=""></a>            
                         <a class="social-icon" href="#" target="blank"><img src="src/img/social-icons/ig-white.png" alt=""></a>            
