@@ -332,8 +332,9 @@ body {
         }
     }
     .instagram-content{
-        background: rgb(131,58,180);
-        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+        // background: rgb(131,58,180);
+        background-color:#e6564f;
+        // background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
         border-radius:10px;
         @media screen and (max-width:600px){
             padding-right:0px;
