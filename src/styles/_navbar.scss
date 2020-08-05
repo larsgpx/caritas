@@ -28,7 +28,7 @@
                 -webkit-transition: all .5s;
                 color: black;
                 font-family: "Montserrat";
-                font-size: 0.75rem;
+                font-size: 0.85rem;
                 padding: 0.75rem 0;
                 font-weight:600;
                 &:hover,
@@ -56,7 +56,7 @@
         .navbar-nav {
             .nav-item {
                 .nav-link {                    
-                    padding: 0 1rem;
+                    padding: 0 .8rem;
                 }
                 &:last-child {
                     .nav-link {
@@ -84,7 +84,7 @@
                 .nav-item {
                     .nav-link {
                         color: black;
-                        font-size: .7rem;
+                        font-size: .75rem;
                         &:hover {
                             color: $gray;
                         }
